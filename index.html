@@ -843,6 +843,25 @@
     }
   </style>
 
-</body>
+  <!-- ==================== AI修行社区 - Gitalk 评论区 ==================== -->
+  <div id="gitalk-container" style="margin-top: 60px; max-width: 900px; margin-left: auto; margin-right: auto; padding: 0 20px;"></div>
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/gitalk/1.8.0/gitalk.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/gitalk/1.8.0/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'Ov23litVTbFkwmGNHrGH',
+      clientSecret: '98ed6384ece2b56bd9eb1ce8fb9c1ae466faf5b1',
+      repo: 'ai-cultivation-community',
+      owner: 'xiaowang-ai-liu',
+      admin: ['xiaowang-ai-liu'],
+      id: location.pathname,
+      distractionFreeMode: false,
+      language: 'zh-CN',
+      perPage: 15,
+      createIssueManually: true,
+      pagerDirection: 'last'
+    })
+    gitalk.render('gitalk-container')
+  </script></body>
 </html>
     
